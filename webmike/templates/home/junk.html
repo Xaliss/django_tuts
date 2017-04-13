@@ -1,0 +1,111 @@
+<img src=" {% 'static personal/images/monimage.jpg' %}   class="responsive-img" style='max-height:100px;' alt="Image" ">
+
+
+<img src=" {% 'static personal/images/monimage.jpg' %}   ">	
+
+
+<center>
+		<img src="{% static 'personal/img/monimage.jpg' %}" class="responsive-img" style='max-height:100px;' alt="face">
+</center>
+
+{% extends "home/header.html" %}
+
+
+style=" text-align:right; margin-right:4px ; border:1px brown solid " align="left" height="190" width="300&quot;/"
+
+<ul class="">
+				<li><a href='/webmike/homezz'>Kili</a></li>
+				<li><a href='/webmike/home'>Home</a></li>
+				<li><a href='/webmike/kala'>Contact</a></li>
+			  </ul>
+
+
+	<div class="col-sm-2">	<br><br>
+		<center>
+			<img src="{% static 'personal/images/onarrive.jpg' %}" 
+			class="img-responsive" style='max-height:300px;' alt="Image">
+		</center>
+	</div>			  
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<nav class="navbar  navbar-default">
+		<div class=" container-fluid"   >
+			  <div class="navbar-header">
+			  		<a href='#'class= "navbar-brand" style="color:gold ;text-decoration:none">ON_ARRIVE</a> 
+			  
+			  		 
+			  			<ul class="navbar navbar-nav" style="background-color:#c2c2c2">	
+			  				<li class= "active"> <a href='#'>BOUTON_1</a></li> 
+			  				<li><a href='#'>BOUTON_2</a></li> 
+			  				<li><a href='#'>BOUTON_3</a></li> 
+			  				<li><a href='#'>BOUTON_4</a></li> 
+			  				<li><a href='#'>BOUTON_5</a></li> 
+			  				<li><a href='#'>BOUTON_6</a></li> 
+			  			</ul>
+			  		 
+			  	</div>
+		</div>	  	
+</nav>
+
+
+
+<ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">DropdownY <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+
+
+      {% block content %}
+	{% for post in object_list %}
+		<h5>{{ post.date|date:"Y-m-d" }}<a href="/blog/{{post.id}}">  {{ post.title }}</a></h5>
+	{% endfor %}
+
+
+                url(r'^(?P<pk>\d+)$', DetailView.as_view(
+                                    model = Post,
+                                    template_name="blog/post.html")),
+
+    {% endblock %}
+
+
+
+
+
+{% extends "home/header.html" %}
+{% block content %}
+	{% for post in object_list %}
+		<h5>{{ post.date|date:"Y-m-d" }}<a href="blog/{{post.id}}">  {{ post.title }}</a></h5>
+	
+
+
+                url(r'^(?P<pk>\d+)$', DetailView.as_view(
+                                    model = Post,
+                                    template_name="blog/post.html")),
+{% endfor %}
+    {% endblock %}
+
+
+    
+                url(r'^(?P<pk>\d+)$', DetailView.as_view(
+                                    model = Post,
+                                    template_name="/blog/post.html")),
+
+
+<link rel="icon" href="{% static 'personal/images/flecheiconez.ico' %}" />
+
+
+<div class="col-lg-12 col-md-6 bg-primary ">
+        			<p><h3>Une autre div dedans</h3></p>
+        		</div>

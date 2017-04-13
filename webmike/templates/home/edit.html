@@ -1,0 +1,19 @@
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+    <form action="/webmike/update/{{ livre.id }}" method="POST">
+        {% csrf_token %}
+        <label for="titre">Titre<input type="text" name="titre" id="name"
+          value="{{livre.titre}}" placeholder"{{livre.titre}}" />
+        </label>
+        <label for="resume">Resume<input type="text" name="resume" id="name"
+          value="{{livre.resume}}" placeholder"{{livre.resume}}" />
+        </label>
+        <input type="submit" value="Mise à jour"/>    
+
+    </form>
+
+</body>
+</html>

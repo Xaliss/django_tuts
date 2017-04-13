@@ -1,0 +1,14 @@
+{% extends "home/base.html" %}
+{% block content %}
+
+  <ul class="blanc">  
+    {% for champ in ma_liste %}
+      <li> <h4><a href="/champignons/{{champ.id}}">{{ champ.nomcommun }}  {{ champ.date|date:"d-m-Y" }}</a></h4> </li>
+        
+        
+    {% endfor %}
+<hr/> 
+
+  </ul>
+
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends "home/base.html" %}
+{% block content %}
+ 
+  <ul>  
+    {% for livre in ma_liste %}
+      <li> <h4><a href="/webmike/{{livre.id}}">{{  livre.titre }}  {{ livre.date|date:"d-m-Y" }}</a></h4> </li>
+    {% endfor %}
+   
+   <form action="/webmike/create" method = "POST">
+    {% csrf_token%}
+    <label for="titre">Titre: <input type="text" name="titre"/></label>
+    <label for="resume">Resume: <input type="textarea" name="resume"/></label> 
+    <!-- <label for="date">Date: <input type="text" name="time"/></label> -->
+     <input class="gris" type="submit" value="Création"/>    
+
+   </form>  
+
+    <table border="2">
+    		<thead>
+    				<th><center>ID</center></th>
+    				<th><center>TITRE</center></th>
+    				<th><center>RESUME</center></th>
+    				<th><center>DATE</center></th>
+            <th><center>ACTIONS</center></th>
+    		</thead>
+    			<tbody>
+    				{% for livre in ma_liste %}
+    			<tr>
+                   <td>{{livre.id}}</td>	
+                   <td>{{livre.titre}}</td>
+                   <td>{{livre.resume}}</td>
+                   <td>{{livre.date}}</td>
+                   <td><a href="edit/{{livre.id}}"/a>Edit   <a href="efface/{{livre.id}}"/a>  Efface</td>
+                </tr>
+                   {%endfor%}
+                </tbody>   
+    		
+
+    </table>    
+    
+ 
+ 
+
+  </ul>
+
+{% endblock %}
+ 
+	

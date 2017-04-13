@@ -1,0 +1,17 @@
+{% extends "home/leader.html" %}
+
+
+{% block content %}
+
+<h3><a href="blog/post.id}}">{{ post.title }}</a>"**********"</h3> 
+<h3> On {{ post.date }}</h3>
+
+<div class = "container">
+	{{ post.body|safe|linebreaks}}
+</div>
+<br><br>
+			  <div class="btn-group" role="group" aria-label="...">
+  					<button type="button" class="btn btn-default"> <a href="/webmike/home" >Retour</a> </button>
+  				<!--	<button type="button" class="btn btn-default"> <a href="/webmike/home" >Blog</a> </button> -->
+			  </div>
+{% endblock %}

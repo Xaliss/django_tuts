@@ -1,0 +1,17 @@
+{% extends "champignons/fungus.html" %}
+
+
+{% block content %}
+
+<h3><a href="champs/champs.id}}">{{ post.title }}</a>"**********"</h3> 
+<h3> On {{ champs.date }}</h3>
+
+<div class = "container">
+	{{ champs.body|safe|linebreaks}}
+</div>
+<br><br>
+			  <div class="btn-group" role="group" aria-label="...">
+  					<button type="button" class="btn btn-default"> <a href="/champignons/levures" >Levures</a> </button>
+  				<!--	<button type="button" class="btn btn-default"> <a href="/webmike/home" >Blog</a> </button> -->
+			  </div>
+{% endblock %}

@@ -1,0 +1,13 @@
+
+{% extends "home/header.html" %}
+{% block content %}
+	{% for post in object_list %}
+		<h5>{{ post.date|date:"Y-m-d" }}<a href="/blog/{{post.id}}">  {{ post.title }}</a></h5>
+	{% endfor %}
+
+
+                url(r'^(?P<pk>\d+)$', DetailView.as_view(
+                                    model = Post,
+                                    template_name="/blog/post.html")),
+
+    {% endblock %}

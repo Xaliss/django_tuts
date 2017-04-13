@@ -1,0 +1,25 @@
+{% extends "home/fungus.html" %}
+{% load staticfiles%}
+{% block content %}   
+
+        <div class="row text-center  ">
+
+            <div class="col-lg-12 col-sm-12 hero-feature  ">
+                <div class="thumbnail" >
+                    <img src="{% static 'personal/images/antilopes.jpg' %}">
+                    <div class="caption bg-vert or">
+                        <h3 class="or">Venez Découvrir !</h3>
+                        <p class="blanc">La Savane Africaine dans toute sa splendeur !</p>
+                        <!-- <p>
+                            <a href="#" class="btn btn-primary">Réserver</a> <a href="#" class="btn btn-default">Infos</a>
+                        </p> -->
+                    </div>
+                </div>
+            </div>
+
+       </div>    
+
+
+{%include "includes/includchamps.html"%}
+
+{% endblock %} 

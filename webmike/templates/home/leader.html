@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	<title>Blog- Mike</title>
+	<meta charset="utf-8" />
+		{% load staticfiles %}
+
+<!-- ************************************************************************* -->
+
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link rel="icon" href="{% static 'personal/images/flecheicone.ico' %}" />
+
+<!-- ************************************************************************* -->
+
+	 
+			  
+			  <div class="c"style="background-color:#f6f6f6">
+				  <center>
+				  <h3>L'Afrique Occidentale Française en 1951</h3>
+				  </center>
+			  </div>
+
+
+
+			  <hr>
+
+
+</head>
+
+<body class="body" style="background-color:#f6f6f6" >
+	<div>
+		{% block content %}
+
+		{% endblock %}
+	</div>
+</body>
+
+
+
+</html>

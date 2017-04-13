@@ -1,0 +1,16 @@
+{% extends "blog/blog.html" %}
+
+
+{% block content %}
+
+<h4><a href="/blog/{{post.id}}">{{ post.title }}</a>///***</h4> 
+<h5> On {{ post.date }}</h5>
+<div class = "container">
+	{{ post.body|safe|linebreaks}}
+</div>
+<br><br>
+			  <div class="btn-group" role="group" aria-label="...">
+  					<button type="button" class="btn btn-default"> <a href="/webmike/home" >Retour</a> </button>
+  					<button type="button" class="btn btn-info"> <a href="/champignons/levures" >Levures</a> </button> 
+			  </div>
+{% endblock %}
